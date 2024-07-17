@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+  
+}
+.nav{
+    padding: 40px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15vw;
+    height: 50px;
+    max-width: 80vw;
+    margin: auto;
+}
+nav li{
+    
+    list-style: none;
+}
+.topmid{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2vw;
+    font-size: 17px;
+    font-weight: 450;
+    padding-top: 6px;
+}
+.topright{
+    padding-top: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1.25vw;
+}
+@keyframes span {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.25);
+    }
+}
+.topmid li button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+.topright button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+}
+button:hover{
+    animation: span 0.5s ease-out  1 forwards ;
+}
+main{
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+}
+.left p{
+    font-size: 17;
+    font-weight: 600;
+}
+.left h1{
+    line-height: 70px;
+    font-size: 60px;
+    font-weight: 900;
+    /* text-decoration: underline; */
+}
+.left button{
+    width:104px;
+    background-color: white;
+    border: 2 px solid black;
+    padding: 12px 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.bottom{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 140px;
+    max-width: 60vw;
+    margin: auto;
+    margin-top: 60px;
+    
+}
+.bottom img{
+    width: 85px;
+    
+}
+.bottom div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none; 
+    color: black;
+}
+.adress{
+    padding-top: 20px;
+    font-weight: 400;
+    max-width: 70vw;
+    margin: auto;
+    color: gray;
+}
+.right2{
+    
+    margin-top: 70px;
+    text-align: start;
+    
+}
+.right2 p{
+    margin-top: 10px;
+}
+.money{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.money div {
+    border: 2px solid black;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.cart{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    
+}
+.add button{
+    width:104px;
+    background-color: white;
+    border: 2 px solid black;
+    padding: 12px 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 5px 22px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.quantity button{
+    padding: 0px 10px;
+    font-size: 26px;
+    font-weight: 500;
+    background-color: white;
+border: none;
+cursor: pointer;
+}
+.quantity div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.minus{
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.plus{
+    padding-right: 0px;
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 50px;
+}
+.photos button{
+    margin-top: 40px;
+    padding: 0px 10px;
+    font-size: 26px;
+    font-weight: 500;
+    background-color: white;
+border: none;
+cursor: pointer;
+}
+.photos img{
+    border: 2px solid black;
+    padding: 5px;
+    height: 100px;
+    border-radius: 15px;
+}
+.Cartweb{
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    text-align: center;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-top: 30px;
+}
+.head{
+    max-width: 70vw;
+    margin: auto;
+    font-size: 60px;
+}
+
+.grid{
+    height: 500px;
+    
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 50px 50px 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}
+.grid div{ 
+    
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.quantity2{
+    border: none;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.quantity2 .minus{
+    padding: 0;
+margin: 0;
+    padding-left: 2px;
+}
+.quantity2 .plus{
+    padding: 0;
+margin: 0;
+    padding-right: 2px;
+    height: 2px;
+}
+.quantity2 div{
+    padding: 5px;
+    margin: 0;
+    
+}
+.right3{
+    height: 350px;
+   border: 2px solid black;
+   padding: 20px;
+   border-radius: 20px;
+    margin-top: 70px;
+}
+.box{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px 30px;
+    height: 270px;
+}
+.right3 p{
+    
+    font-weight: 500;
+    text-align: left;
+}
+.right3 form{
+    margin-top: 20px;
+}
+form label button{
+    padding: 10px 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+border: 2px solid black;
+cursor: pointer;
+border-radius: 15px;
+}
+form input{
+    padding: 10px 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+border: 2px solid black;
+cursor: pointer;
+border-radius: 15px;
+}
+.cost{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.pay{
+   margin-top: 20px;
+    text-align: center;
+    padding: 15px 80px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+border: 2px solid black;
+cursor: pointer;
+border-radius: 15px;
+}
+.head2 a{
+    margin-top: 100px;
+    font-size: 33px;
+}
+.left4{
+    width: 400px;
+}
+.left4 p{
+    text-align: left;
+    margin-top: 50px;
+}
+.left4 h1{
+    text-align: left;
+    margin-top: 30px;
+}
+.left4 form label{
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+}
+.left4 form{
+    
+    text-align: start;
+}
+.left4 form input{
+    margin-top: 10px;
+    padding: 20px 170px;
+    padding-left: 10px;
+}
+.left4 h2{
+    margin-top: 20px;
+    text-align: start;
+}
+
+.right4{
+    border: none;
+    margin-top: 250px;
+}
+.box2{
+    margin-top: 40px;
+}
+.Payweb{
+    gap: 200px;
+}
+.Payment-section{
+    margin-top: 20px;
+    height: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+.options{
+    display: flex;
+    gap: 20px;
+    
+    margin-top: 10px;
+}
+.options div img{
+    width: 40px;
+    margin-bottom: 5px;
+    display: block;
+}
+.options div{
+    border: 2px solid black;
+    padding: 15px 30px;
+    border-radius: 20px;
+    
+}
+.small-form form input{
+    padding-right:0px;
+    width: 150px;
+}
+.small-form{
+    display: flex;
+    gap: 30px;
+}
+.options div button{
+    border: none;
+    background: none;
+}

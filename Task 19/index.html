@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Logo</li>
+            <li class="mid">Home</li>
+            <li class="mid">Services</li>
+            <li class="mid">About Us</li>
+            <li class="mid">Contact Us</li>
+            <li>Username</li>
+        </ul>
+    </div>
+    <main>
+        <div class="left">
+            <div class="box box1">
+                <h1>Added Items</h1>
+                <div class="grid">
+                    <div class="items">S no.</div>
+                    <div class="items">Service</div>
+                    <div class="items">Price</div>
+                </div>
+                <div class="price">
+                    <h1>Total Amount</h1>
+                    <h1 id="total">$0.00</h1>
+                </div>
+            </div>
+            <div class="box box2">
+                <h2>Book Now</h2>
+                <form action="text">
+
+                    <div class="submit">
+                        <div class="submit">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter name">
+                        </div>
+                        <div class="second">
+                            <div class="submit">
+                                <label for="name">Email Id</label>
+                                <input type="text" id="name" name="name" placeholder="joh@gmail.com">
+                            </div>
+                            <div class="submit">
+                                <label for="name">Phone No.</label>
+                                <input type="text" id="name" name="name" placeholder="XXXXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="submit btn" id="box2">
+                            
+                            <input type="button" id="btn" name="btn" value="Submit Now">
+                        </div>
+                </form>
+            </div>
+        </div>
+        
+        </div>
+        <div class="right">
+            <div class="box box-right">
+                <div class="content">
+                <h1>Browse Our Services</h1>
+                <p>Click on the add to cart button to add the services to your cart or press skip<p>
+                </div>
+                <div class="img">
+                    <img src="Ironing.jpg" alt="" id="image">
+                    <div class="name">
+                        <h1 id="rname">Ironing</h1>
+                        <h1 id="price">$4.99</h1>
+                    </div>
+                    <div class="btns">
+                        <button>Skip Item</button>
+                        <button>Add Item</button>
+                    </div>
+                    
+                </div>
+                <div class="end">
+                    Add the items to the card and book now
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

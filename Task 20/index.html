@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailJS Example</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("mOsMuNQuTGCEuhh5p"); 
+        })();
+    </script>
+    <script src="email.js"></script>
+</head>
+<body>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Logo</li>
+            <li class="mid">Home</li>
+            <li class="mid">Services</li>
+            <li class="mid">About Us</li>
+            <li class="mid">Contact Us</li>
+            <li>Username</li>
+        </ul>
+
+        <div class="hero">
+            <div class="container">
+                <div class="left">
+                    <h1>Revitalive Your</h1>
+                    <h1>Clothes With Expert</h1>
+                    <h1 class="blue">Laundry Services!</h1>
+                </div>
+                <div class="content">
+                    <p>From Premium dry cleaning to swift wash and fold, we deliver care and convinience. Schedule a
+                        pickup and rediscover the freshness of your clothes today!</p>
+                </div>
+                <div class="button">
+                    <a href="#main"><button>Book a service today!</button></a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="Capture.PNG" alt="Washing Machine">
+            </div>
+        </div>
+        <div class="service">
+            <h1>Our Achievements</h1>
+            <div class="Achievement">
+                <div>15+</div>
+                <div>Laundry Services</div>
+            </div>
+            <div class="Achievement">
+                <div>240+</div>
+                <div>Happy Customers</div>
+            </div>
+            <div class="Achievement">
+                <div>2+</div>
+                <div>Years Experience</div>
+            </div>
+
+        </div>
+        <main id="main">
+
+            <div class="left2">
+                <div class="box box1">
+                    <h1>Added Items</h1>
+                    <div class="grid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td class="items">S no.</td>
+                                    <td class="items">Service</td>
+                                    <td class="items">Price</td>
+                                </tr>
+
+                            </thead>
+                            <tbody class="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="price">
+                        <h1>Total Amount</h1>
+                        <h1 id="total">0.00</h1>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <h2>Book Now</h2>
+                    <form action="text">
+
+                        <div class="submit">
+                            <div class="submit">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter name">
+                            </div>
+                            <div class="second">
+                                <div class="submit">
+                                    <label for="name">Email Id</label>
+                                    <input type="text" id="mail" name="name" placeholder="joh@gmail.com">
+                                </div>
+                                <div class="submit">
+                                    <label for="name">Phone No.</label>
+                                    <input type="text" id="phone" name="name" placeholder="XXXXXXXXXX">
+                                </div>
+                            </div>
+                            <div class="submit btn" id="box2">
+
+                                <input type="button" id="btn" name="btn" value="Submit Now" onClick="sendMail()" >
+                            </div>
+                    </form>
+                </div>
+            </div>
+
+    </div>
+    <div class="right2">
+        <div class="box box3">
+            <h1>Our Services</h1>
+            <p>Click on the add button to add the services on your cart</p>
+            <div class="container2">
+                <div class="boxes">
+                    <div class="content2">1. Dry Cleaning - 300</div>
+                    <div class="add"><button class="but">Add Item</button></div>
+                </div>
+                <div class="boxes">
+                    <div class="content3">2. Ironing - 200 </div>
+                    <div class="add"><button class="but">Add Item</button></div>
+                </div>
+                <div class="boxes">
+                    <div class="content4"> 3. Folding - 100</div>
+                    <div class="add"><button class="but">Add Item</button></div>
+                </div>
+                <div class="boxes">
+                    <div class="content5">4. Wedding Dress Cleaning- 800</div>
+                    <div class="add"><button class="but">Add Item</button></div>
+                </div>
+                <div class="boxes">
+                    <div class="content6">5. Leather and Seude Cleaning - 700</div>
+                    <div class="add"><button class="but">Add Item</button></div>
+                </div>
+                <div class="boxes">
+                    <div class="content7">6. Stain Removal - 500 </div>
+                    <div class="add"><button class="but">Add Item</button></div>
+                </div>
+
+            </div>
+        </div>
+        </main>
+        <div class="happiness">
+            <div class="hap1">
+                <img src="washer.png" alt="" class="hap">
+                <h3>Premium Services</h3>
+                <p>Elevate your washdrobe with our meticuluous dry cleaning, ensuring garments look and feel as good and
+                    new</p>
+            </div>
+            <div class="hap2">
+                <img src="support.png" alt="" class="hap">
+                <h3>Customer Support</h3>
+                <p>Elevate your washdrobe with our meticuluous dry cleaning, ensuring garments look and feel as good and
+                    new</p>
+            </div>
+            <div class="hap3">
+                <img src="free-shipping.png" alt="" class="hap">
+                <h3>Free Shipping</h3>
+                <p>Elevate your washdrobe with our meticuluous dry cleaning, ensuring garments look and feel as good and
+                    new</p>
+            </div>
+            <div class="hap4">
+                <img src="low-price.png" alt="" class="hap">
+                <h3>Affordable Prices</h3>
+                <p>Elevate your washdrobe with our meticuluous dry cleaning, ensuring garments look and feel as good and
+                    new</p>
+            </div>
+        </div>
+        <div class="sub">
+            <h1>Subscribe to our <br> newsletter</h1>
+
+            <div class="fullname">
+                <form action="text">
+                    <input type="text" id="fullname" placeholder="Full Name">
+                    <input type="button" value="Subscribe" id="Subscribe">
+                </form>
+            </div>
+            <form action="text">
+                <input type="text" id="mailid" placeholder="Email">
+            </form>
+        </div>
+        <div class="footer">
+            <div class="about">
+                <h2>Logo</h2>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident reprehenderit fugiat voluptatibus
+                    perspiciatis</p>
+            </div>
+            <div class="links">
+                <h3>Important Links</h3>
+                <p>About us</p>
+                <p>Contact us</p>
+                <p>Privacy Policy</p>
+                <p>Terms of use</p>
+                <p>Refund Policy</p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>mail@site.com</p>
+                <p>+91 91234 56780</p>
+            </div>
+            <div class="follow">
+                <h3>Follow Us</h3>
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Youtube</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

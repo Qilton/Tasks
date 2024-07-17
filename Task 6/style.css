@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.container{
+    display: flex;
+}
+.img img{
+    width: 50vw;
+    height: 99.6vh;
+}
+.right{
+    width: 50vw;
+    height: 99.6vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(232, 239, 245);
+    
+}
+.Heading{
+    /* margin-top: 100px; */
+    /* padding: 50px; */
+    text-align: center;
+    padding-bottom: 2vh;
+    font-size: 33px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color:  black;
+}
+.para{
+    padding-top: 2vh;
+    text-align: center;
+    font-size: 35px;
+    color: #34495e;
+}
+.form ::placeholder{
+    text-align: start;
+    padding-left: 3vw;
+    padding-right: 20vw;
+    font-size: 20px;
+}
+.form label{
+    display: block;
+    padding: 1.5vh;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.form input{
+    columns: red;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+    padding-right: 25vw;
+    border: none;
+    border-radius: 25px;
+    
+}
+.forgot{
+    text-align: end;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color:  black;
+    margin-top: 2vh;
+}
+
+.button button{
+    margin-top: 4vh;
+    padding: 2.5vh 15.5vw;;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color:  #e4f1fe;
+    background-color: #5fc9f3; 
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    cursor:pointer
+}
+.register{
+    display: inline;
+    margin-top: 3vh;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color:  black;
+}
+.link{
+    text-align: center;
+    display: inline;
+}

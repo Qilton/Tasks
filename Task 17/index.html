@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Welcome{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 0px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 74px;
+            width: 74px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        #form{
+            text-align: center;
+           
+        }
+        #form input{
+            padding: 14px 10px;
+           
+        }
+        #form input ::placeholder{
+            text-align: start;
+        }
+        #form label button{
+            padding: 14px 10px;
+        }
+    </style>
+</head>
+<body>
+   <h1 class="Welcome">Hello</h1>
+  <div class="container">
+    <div class="box" id="box1">Red</div>
+    <div class="box" id="box2">Blue</div>
+    <div class="box" id="box3">Green</div>
+    <div class="box" id="box4">Yellow</div>
+    
+  </div>
+  <div id="form">
+    <form action="text" id="forms"></form>
+    <input type="text" id="Name" placeholder="Enter name">
+    <input type="button" value="Click me" id="btn">
+<script src="script.js"></script>
+</body>
+</html>

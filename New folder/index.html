@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Item Quantity Management</title>
+<style>
+    /* Optional: Some basic styling for better presentation */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .item {
+        margin-bottom: 10px;
+    }
+    .quantity {
+        margin-left: 10px;
+    }
+    .btn {
+        margin-left: 5px;
+        cursor: pointer;
+        padding: 2px 8px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 3px;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<h1>Item Quantity Management</h1>
+
+<!-- Placeholder for each item -->
+<div id="items"></div>
+
+<script>
+    let arr = [
+        {
+            Object: "Office Paper",
+            Quantity: 0,
+            Price: 10
+        },
+        {
+            Object: "Newspaper",
+            Quantity: 0,
+            Price: 13
+        },
+        {
+            Object: "Copies/Books",
+            Quantity: 0,
+            Price: 10
+        },
+        {
+            Object: "Cardboard",
+            Quantity: 0,
+            Price: 8
+        },
+        {
+            Object: "Plastic",
+            Quantity: 0,
+            Price: 27
+        },
+        {
+            Object: "Iron",
+            Quantity: 0,
+            Price: 37
+        },
+        {
+            Object: "Steel Utensils",
+            Quantity: 0,
+            Price: 105
+        },
+        {
+            Object: "Aluminium",
+            Quantity: 0,
+            Price: 105
+        }
+    ];
+
+    // Function to update the quantity and price of an item
+    function updateItemUI(index) {
+        const item = arr[index];
+        const itemDiv = document.getElementById(`item-${index}`);
+        itemDiv.innerHTML = `
+            <strong>${item.Object}</strong>: 
+            Quantity = <span id="quantity-${index}" class="quantity">${item.Quantity}</span>, 
+            Total Price = $<span id="totalPrice-${index}">${item.Quantity * item.Price}</span> 
+            <button class="btn" onclick="increaseQuantity(${index})">+</button>
+            <button class="btn" onclick="decreaseQuantity(${index})">-</button>
+        `;
+    }
+
+    // Function to update the quantity and UI
+    function updateItem(index, deltaQuantity) {
+        arr[index].Quantity += deltaQuantity;
+        const quantityElement = document.getElementById(`quantity-${index}`);
+        quantityElement.textContent = arr[index].Quantity;
+        const totalPriceElement = document.getElementById(`totalPrice-${index}`);
+        totalPriceElement.textContent = arr[index].Quantity * arr[index].Price;
+    }
+
+    // Function to increase quantity of an item
+    function increaseQuantity(index) {
+        updateItem(index, 1);
+    }
+
+    // Function to decrease quantity of an item (with a check to ensure it doesn't go below 0)
+    function decreaseQuantity(index) {
+        if (arr[index].Quantity > 0) {
+            updateItem(index, -1);
+        }
+    }
+
+    // Initialize the UI with initial items
+    arr.forEach((item, index) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('item');
+        itemDiv.setAttribute('id', `item-${index}`);
+        updateItemUI(index);
+        document.getElementById('items').appendChild(itemDiv);
+    });
+</script>
+
+</body>
+</html>

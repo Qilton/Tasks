@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+   header div{
+    
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   }
+   header div h1{
+    font-weight: 500;
+    
+   }
+   form{
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 50px;
+   }
+   form input{
+    padding: 10px 15px;
+    border-radius: 10px;
+   }
+   #btn{
+    color: white;
+    background-color: purple;
+    cursor: pointer;
+   }
+   main{
+    padding-top: 30px;
+    max-width: 70vw;
+    height: 2000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10,170px);
+    gap:10px;
+   }
+   .box{
+    border:lightgray;
+    border-radius: 20px;
+    background: lightgray;
+   }
+   .box p{
+    padding: 0px 10px;
+   }
+</style>
+<body>
+    <header>
+        <div>
+            <h1>Hi, Username</h1>
+            <h1>Login</h1>
+        </div>
+    </header>
+    <form action="text" id="form">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="button" value="Search" id="btn">
+    </form>
+    <main id="container">
+        
+        <!-- <div class="box">
+            <p>Student Name : Swayam Bhalotia</p>
+            <p>Marks : 90%</p>
+            <p>Class : 12 A</p>
+            <p>Adress : India</p>
+        </div> -->
+    </main>
+    <main id="container2">
+        
+    </main>
+    <script src="search3.js"></script>
+</body>
+</html>
