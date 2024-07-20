@@ -1,7 +1,9 @@
 import React from 'react'
-
+import Navbar from './navbar'
 const login = () => {
   return (
+    <>
+    <Navbar/>
    <div className="container mx-auto my-56 w-1/4 h-1/2 border-black border-2 px-12 py-10 flex flex-col gap-10 rounded-lg">
         <h1 className='text-3xl font-bold text-center '>LOGIN</h1>
         <form action="submit" className='flex flex-col gap-5'>
@@ -16,6 +18,7 @@ const login = () => {
 
         
    </div>
+   </>
   )
 }
 

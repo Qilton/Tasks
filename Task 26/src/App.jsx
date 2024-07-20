@@ -5,11 +5,12 @@ import { RouterProvider } from 'react-router-dom'
 import Navbar from './components/navbar'
 import Login from './components/login'
 import Signup from './components/signup'
+import Home from './components/home'
 function App() {
  const router= createBrowserRouter([
   {
     path:"/",
-    element:<Navbar/>
+    element:<Home/>
   },
   {
     path: "/login",
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <>
-    
+
      <RouterProvider router={router}/> 
     </>
   )
