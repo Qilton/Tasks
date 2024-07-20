@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.item{
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 10px;
+}
+.display{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 100px;
+ width: 50vw;
+}
+.Shoe{
+  height: 200px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+
+.Add{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.cart{
+  width: 30vw;
+  border: 2px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+.cartimg{
+  height: 20px;
+  object-fit: contain;
+}
+.qtnbtns{
+  display: flex;
+  gap: 5px;
+}

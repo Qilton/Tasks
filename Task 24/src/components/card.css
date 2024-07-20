@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+ background-color: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 200px;
+    color: white;
+    position: relative;
+   }
+   .card:before{
+
+    content:"";
+    background:linear-gradient(45deg,#4158D0,#C850C0,#FFCC70);
+    background-size: 400%;
+
+    animation: bg-animation 5s infinite;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: -2px;
+    z-index: -199;
+   }
+   .Shoe{
+    height: 150px;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  @keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
