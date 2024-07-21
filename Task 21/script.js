@@ -3,23 +3,20 @@ let arr = [1, 2, 3, 4, 5, 6]
 
 const newArr = arr.map(num => Math.pow(num, 2))
 console.log(newArr)
+
+
+
 //Question 2
-const score = 45
-if (score < 25) {
-    console.log("F")
-}
-else if (score > 25 && score < 50) {
-    console.log("D")
-}
-else if (score > 50 && score < 70) {
-    console.log("C")
-}
-else if (score > 70 && score < 90) {
-    console.log("B")
-}
-else {
-    console.log("A")
-}
+let score = 45;
+(score < 25)?console.log("F")
+:(score > 25 && score < 50)?console.log("D")
+:(score > 50 && score < 70)? console.log("C")
+:(score > 70 && score < 90)?console.log("B")
+:console.log("A")
+
+
+
+
 //Question 3
 let car = {
     companyName: "Toyota",
