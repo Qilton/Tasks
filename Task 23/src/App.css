@@ -20,6 +20,7 @@
 }
 .Shoe{
   height: 200px;
+  width:400px;
   object-fit: contain;
   border-radius: 20px;
 }
@@ -47,12 +48,21 @@
 .row{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px;
 }
 .cartimg{
-  height: 20px;
+  height: 40px;
   object-fit: contain;
 }
 .qtnbtns{
   display: flex;
   gap: 5px;
+}
+.price{
+  font-size: 20px;
+  margin-top: 20px;
+}
+.Name{
+  width: 200px;
 }
