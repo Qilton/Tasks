@@ -1,22 +1,23 @@
 import React from 'react'
 import Navbar from './navbar'
-import Display from './display'
+import Credit from './credit'
 
 import Cart from './cart'
 
-const home = () => {
-   
-  return (
-      <>
-   
+
+const Payment = () => {
+    return (
+        <>
+
+
    <Navbar/>
    <div className=" flex w-[95vw] mx-auto justify-between my-20  ">
-        <Display/>
-        <Cart to="/payment" do="Proceed to Payment"/>
+        <Credit/>
+        <Cart to="/" do="Continue Shopping"/>
    </div>
 
    </>
   )
 }
 
-export default home
+export default Payment
