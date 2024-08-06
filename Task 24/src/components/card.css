@@ -13,7 +13,9 @@
     max-width: 200px;
     color: white;
     position: relative;
+    
    }
+
    .card:before{
 
     content:"";
@@ -27,7 +29,7 @@
     right: 0;
     left: 0;
     margin: -2px;
-    z-index: -199;
+    z-index: -1;
    }
    .Shoe{
     height: 150px;
@@ -36,7 +38,7 @@
   }
 
   @keyframes bg-animation {
-    0% {background-position: left}
+    0% {background-position: top}
     50% {background-position: right}
     100% {background-position: left}
   }
